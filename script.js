@@ -15,9 +15,15 @@ document.querySelector("#year").textContent = new Date().getFullYear();
 // Official SoundKeys 1.0.0 installer hosted on GitHub Releases.
 const DOWNLOAD_URL = "https://github.com/SharmaHarshit6392/sound_keys/releases/download/v1.0.0/SoundKeys-Setup-1.0.0.exe";
 const downloadButton = document.querySelector(".download-main");
-if (DOWNLOAD_URL) {
+if (DOWNLOAD_URL && downloadButton) {
   downloadButton.href = DOWNLOAD_URL;
   downloadButton.removeAttribute("aria-disabled");
   downloadButton.classList.remove("button-disabled");
+  downloadButton.classList.add("button-dark");
   downloadButton.innerHTML = 'DOWNLOAD FOR WINDOWS <span>↗</span>';
+
+  const downloadNote = downloadButton.nextElementSibling;
+  if (downloadNote && downloadNote.tagName === "SMALL") {
+    downloadNote.textContent = "Windows desktop · Version 1.0.0 · 38.4 MB";
+  }
 }
