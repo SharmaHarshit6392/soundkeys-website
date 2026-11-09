@@ -12,8 +12,8 @@ nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
 }));
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-// Keep the download disabled while the correct 1.0.0 build is being verified.
-const DOWNLOAD_URL = "";
+// Official SoundKeys 1.0.0 installer hosted on GitHub Releases.
+const DOWNLOAD_URL = "https://github.com/SharmaHarshit6392/sound_keys/releases/download/v1.0.0/SoundKeys-Setup-1.0.0.exe";
 const downloadButton = document.querySelector(".download-main");
 if (DOWNLOAD_URL) {
   downloadButton.href = DOWNLOAD_URL;
