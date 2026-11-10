@@ -5,14 +5,20 @@ A responsive editorial-style landing page for the SoundKeys Windows desktop app,
 ## Preview locally
 Open `index.html` in a browser. No build tools or package installation are required.
 
-## Before publishing
-1. Confirm the public release is ready.
-2. In `script.js`, set `DOWNLOAD_URL` to the exact installer URL.
-3. Update version and installer size in `index.html` if they change.
-4. Replace the abstract keyboard artwork with real SoundKeys screenshots when available.
-5. Review privacy, licensing, support, and download statements before launch.
+## Current release
 
-The Windows download button points to the official SoundKeys 1.0.0 GitHub Release asset. Update `DOWNLOAD_URL` in `script.js` whenever a new installer release is published.
+The website download button points to the official SoundKeys v1.1.0 GitHub Release asset:
+
+`https://github.com/SharmaHarshit6392/sound_keys/releases/download/v1.1.0/SoundKeys-Setup-1.1.0.exe`
+
+The release asset is hosted by GitHub Releases; the website does not host the installer itself.
+
+## Publishing a future release
+1. Publish the new installer as an asset on the SoundKeys GitHub Releases page.
+2. Update `DOWNLOAD_URL` in `script.js` to the exact release asset URL.
+3. Update the version and installer size in `index.html` and `script.js`.
+4. Verify the download button, release notes, source links, and mobile navigation.
+5. Push the website changes to `main`; Cloudflare Pages is configured to deploy from that branch.
 
 ## Free hosting with Cloudflare Pages
 1. Connect this public GitHub repository to a Cloudflare Pages project.
