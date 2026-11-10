@@ -12,8 +12,8 @@ nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
 }));
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-// Official SoundKeys 1.0.0 installer hosted on GitHub Releases.
-const DOWNLOAD_URL = "https://github.com/SharmaHarshit6392/sound_keys/releases/download/v1.0.0/SoundKeys-Setup-1.0.0.exe";
+// Official SoundKeys 1.1.0 installer hosted on GitHub Releases.
+const DOWNLOAD_URL = "https://github.com/SharmaHarshit6392/sound_keys/releases/download/v1.1.0/SoundKeys-Setup-1.1.0.exe";
 const downloadButton = document.querySelector(".download-main");
 if (DOWNLOAD_URL && downloadButton) {
   downloadButton.href = DOWNLOAD_URL;
@@ -24,6 +24,6 @@ if (DOWNLOAD_URL && downloadButton) {
 
   const downloadNote = downloadButton.nextElementSibling;
   if (downloadNote && downloadNote.tagName === "SMALL") {
-    downloadNote.textContent = "Windows desktop · Version 1.0.0 · 38.4 MB";
+    downloadNote.textContent = "Windows desktop · Version 1.1.0 · 40.2 MB";
   }
 }
